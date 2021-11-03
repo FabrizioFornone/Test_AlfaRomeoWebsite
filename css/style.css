@@ -12,7 +12,7 @@ body {
 /* Header */
 
 .head {
-  height: 100px;
+  height: 70px;
   padding-left: 25px;
   padding-top: 20px;
   margin-bottom: 20px;
@@ -33,24 +33,55 @@ body {
   height: 80%;
 }
 
+.float-head {
+    float: right;
+    padding-top: 40px;
+    padding-right: 40px;
+    font-size: 40px;
+    font-family: 'Italianno', cursive;
+}
+
 /* Navbar */
 
 nav ul {
   list-style: none;
   padding-left: 25px;
+  margin-bottom: 25px;
 }
 
 ul li {
   display: inline-block;
-  margin-right: 40px;
-  padding-bottom: 30px;
-  width: 70px;
+  margin-right: 20px;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-ul li:hover {
+li a {
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 70px;
+  text-decoration: none;
+}
+
+li a::after{
+    content: "\2228";
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+li a:hover {
+  padding-bottom: 15px;
   border-bottom: 4px solid #b22222;
 }
+
+/* Jumbotron */
+
+section .container {
+    height: calc(100vh - 140px);
+    background: url("../img/alfa-romeo-giulia-gta-m-2021.jpg") center;
+    background-size: cover;
+}
+
+/* Main */
